@@ -1,0 +1,15 @@
+the code:
+from cryptography.fernet import Fernet
+
+key = Fernet.generate_key()
+print(key)
+
+the error:
+Traceback (most recent call last):
+  File "C:\Users\EthanBrown\Downloads\criptography libary test.py", line 1, in <module>
+    from cryptography.fernet import Fernet
+  File "C:\Users\EthanBrown\AppData\Roaming\Python\Python39\site-packages\cryptography\fernet.py", line 14, in <module>
+    from cryptography.exceptions import InvalidSignature
+  File "C:\Users\EthanBrown\AppData\Roaming\Python\Python39\site-packages\cryptography\exceptions.py", line 9, in <module>
+    from cryptography.hazmat.bindings._rust import exceptions as rust_exceptions
+ImportError: DLL load failed while importing _rust: The specified procedure could not be found.
